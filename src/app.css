@@ -1,0 +1,22 @@
+@keyframes change {
+  0% { background-image: url('/public/public_image/product_10.jpg'); }
+  /* 10% { background-image: url('/public/public_image/product_05.jpg'); } */
+  20% { background-image: url('/public/public_image/product_08.jpg'); }
+  30% { background-image: url('/public/public_image/product_11.jpg'); }
+  40% { background-image: url('/public/public_image/product_17.jpg'); }
+  50% { background-image: url('/public/public_image/product_08.jpg'); }
+  /* 60% { background-image: url('/public/public_image/product_08.jpg'); } */
+  70% { background-image: url('/public/public_image/product_05.jpg'); }
+  /* 80% { background-image: url('/public/public_image/product_08.jpg'); } */
+  90% { background-image: url('/public/public_image/product_12.jpg'); }
+  100% { background-image: url('/public/public_image/product_08.jpg'); }
+
+
+}
+
+.animated-bg {
+  animation: change 10s infinite alternate ease-in-out;
+  background-size: cover; /* ✅ Ensures the image covers the div */
+  background-position: center; /* ✅ Centers the image */
+  background-repeat: no-repeat; /* ✅ Prevents image repetition */
+}
